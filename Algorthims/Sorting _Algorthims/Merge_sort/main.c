@@ -1,5 +1,6 @@
+/* Dependencied */
 #include <stdio.h>
-#include "selection_sort.h"
+#include "Merge_sort.h"
 
 /* use this macro to determine the size of the array*/
 #define ARRAY_SIZE  10
@@ -10,18 +11,18 @@ void print_array (int * array , int array_size);
 /* Testing the algorthim */
 int main ()
 {
-    /* declare unsorted array */
+
     int array [ARRAY_SIZE] = { 10 , 50 , 2, 6 , 11 , 4 , 5 , 6 , 85 ,0 };
 
     /* print the array before applaying the algrthim */
-    printf("the array before sorting ");
+    printf("the un sorted array " );
     print_array(array,ARRAY_SIZE);
 
-    /*apply the algorthim */
-    selection_sort(array,ARRAY_SIZE);
+    /* applaying the algorthim */
+    Merge_sort(array,ARRAY_SIZE);
 
-    /* printing the array after applaying the algorthim*/
-    printf(" the array after sorting ");
+     /* print the array after applaying the algrthim */
+    printf(" \nthe sorted sorted array " );
     print_array(array,ARRAY_SIZE);
 
 
@@ -45,4 +46,3 @@ void print_array (int * array , int array_size)
     }
      printf("\n");
 }
-

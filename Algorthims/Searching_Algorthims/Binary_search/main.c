@@ -47,7 +47,7 @@ void print_array (int * array , int array_size)
     /*looping the array and print each element */
     for (int index = 0 ; index < array_size ; index++)
     {
-        printf("%d ,",array[index]);
+        printf("%d \t",array[index]);
     }
      printf("\n");
 }
